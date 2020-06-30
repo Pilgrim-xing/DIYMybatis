@@ -1,30 +1,28 @@
 package com.itheima.mybatis.cfg;
 
-/**
- * auther:XingTL
- * date:2020/5/8 14:46
- */
-
 import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * @author 黑马程序员
+ * @Company http://www.ithiema.com
  * 自定义mybatis的配置类
  */
 public class Configuration {
+
     private String driver;
     private String url;
     private String username;
     private String password;
 
-    private Map<String,Mapper> mappers = new HashMap<String, Mapper>();
+    private Map<String,Mapper> mappers = new HashMap<String,Mapper>();
 
     public Map<String, Mapper> getMappers() {
         return mappers;
     }
 
     public void setMappers(Map<String, Mapper> mappers) {
-        this.mappers.putAll(mappers);//每次调用该方法，追加mappers进入
+        this.mappers.putAll(mappers);//此处需要使用追加的方式
     }
 
     public String getDriver() {

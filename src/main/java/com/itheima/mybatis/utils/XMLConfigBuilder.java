@@ -21,9 +21,10 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * @author 黑马程序员
+ * @Company http://www.ithiema.com
  *  用于解析配置文件
  */
-
 public class XMLConfigBuilder {
 
 
@@ -163,7 +164,6 @@ public class XMLConfigBuilder {
         }
     }
 
-
     /**
      * 根据传入的参数，得到dao中所有被select注解标注的方法。
      * 根据方法名称和类名，以及方法上注解value属性的值，组成Mapper的必要信息
@@ -215,4 +215,11 @@ public class XMLConfigBuilder {
         }
         return mappers;
     }
+
+
+
+
+
+
+
 }

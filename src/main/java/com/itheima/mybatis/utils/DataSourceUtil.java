@@ -6,27 +6,23 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 /**
- * auther:XingTL
- * date:2020/5/8 15:23
- */
-
-/**
+ * @author 黑马程序员
+ * @Company http://www.ithiema.com
  * 用于创建数据源的工具类
  */
 public class DataSourceUtil {
+
     /**
      * 用于获取一个连接
      * @param cfg
      * @return
      */
     public static Connection getConnection(Configuration cfg){
-        Connection connection = null;
         try {
             Class.forName(cfg.getDriver());
-            connection =  DriverManager.getConnection(cfg.getUrl(), cfg.getUsername(), cfg.getPassword());
-        } catch (Exception e) {
-            e.printStackTrace();
+            return DriverManager.getConnection(cfg.getUrl(), cfg.getUsername(), cfg.getPassword());
+        }catch(Exception e){
+            throw new RuntimeException(e);
         }
-        return connection;
     }
 }

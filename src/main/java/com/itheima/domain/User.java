@@ -4,10 +4,11 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * auther:XingTL
- * date:2020/4/28 21:18
+ * @author 黑马程序员
+ * @Company http://www.ithiema.com
  */
-public class User implements Serializable {
+public class User implements Serializable{
+
     private Integer id;
     private String username;
     private Date birthday;
@@ -59,7 +60,7 @@ public class User implements Serializable {
         return "User{" +
                 "id=" + id +
                 ", username='" + username + '\'' +
-                ", birthdaye=" + birthday +
+                ", birthday=" + birthday +
                 ", sex='" + sex + '\'' +
                 ", address='" + address + '\'' +
                 '}';

@@ -1,6 +1,5 @@
 package com.itheima.mybatis.utils;
 
-
 import com.itheima.mybatis.cfg.Mapper;
 
 import java.beans.PropertyDescriptor;
